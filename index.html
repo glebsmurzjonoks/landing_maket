@@ -118,17 +118,25 @@
             </div>
 
             <div class="online__camera__form">
-                <label for="email"><b>Name</b></label>
-                <input type="text" placeholder="What is your name:" name="email" required>
+                <div class="form__row">
+                    <div class="form_column">
+                        <label for="Name" class="from__text"><b>Name</b></label><br>
+                        <input type="text" class="form__input" placeholder="What is your name:" name="Name" required>
+                    </div>
 
-                <label for="phn"><b>Phone</b></label>
-                <input type="text" placeholder="Your phone number:" name="phn" required>
+                    <div>
+                        <label for="phn" class="from__text"><b>Phone</b></label><br>
+                        <input type="text" class="form__input" placeholder="Your phone number:" name="phn" required>
+                    </div>
 
-                <button class="header_button">Submit</button>
+                    <button class="header_button">Submit</button>
 
-                <br>
-                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                <label for="vehicle1">I agree to the processing of personal data</label>
+                </div>
+                <div class="form__row2">
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" class="form__checkbox">
+                    <label for="vehicle1"><span class="checkbox__text">I agree to the processing of personal
+                            data</span></label>
+                </div>
             </div>
         </section>
 
@@ -205,26 +213,32 @@
                     <p class="request__form__header">Leave a request for free<br>
                         departure of the measurer</p>
                     <div class="request__form__element">
-                        <label for="name">Name</label>
-                        <input type="text" placeholder="What is your name:" name="name" required>
+                        <label for="name" class="from__text2">Name</label><br>
+                        <input type="text" class="form__input2" placeholder="What is your name:" name="name" required>
                     </div>
                     <div class="request__form__element">
-                        <label for="phn">Phone</label>
-                        <input type="text" placeholder="Your phone number:" name="phn" required>
+                        <label for="phn" class="from__text2">Phone</label><br>
+                        <input type="text" class="form__input2" placeholder="Your phone number:" name="phn" required>
                     </div>
 
                     <div>
-                        <label for="email">Email</label>
-                        <input type="email" placeholder="Your phone Email:" name="email" required>
+                        <label for="email" class="from__text2">Email</label><br>
+                        <input type="email" class="form__input2" placeholder="Your phone Email:" name="email" required>
                     </div>
 
                     <div>
                         <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
                         <label for="vehicle1">I agree to the processing of personal data</label>
                     </div>
+                    <div class="button__end">
+                        <button class="header_button2">CALL THE MEASURER</button>
+                    </div>
 
-                    <button class="header_button">Submit</button>
                 </div>
+            </div>
+            <div class="pig__baner">
+                <img src="./img/Pig.png" alt="">
+                <p>Help save 10 - 20% of the <br> cost of materials</p>
             </div>
         </div>
         <!-- Third Section -->
