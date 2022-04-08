@@ -347,23 +347,64 @@
         <section class="sixth__section">
             <div class="content__wrapper">
                 <div class="map__form">
-                    <p>have any questions?</p>
-                    <div class="map__form__element">
-                        <input type="text">
-                    </div>
-                    <div class="map__form__element"></div>
-                    <div class="map__form__element">
-                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                        <label for="vehicle1">I agree to the processing of personal data</label>
-                    </div>
-                    <div class="map__form__element">
-                        <button>Submit</button>
-                    </div>
+                    <form action="" class="question__form">
+                        <p class="map__form__header">have any questions?</p>
+                        <div class="map__form__element0">
+                            <div class="map__form__element">
+                                <label for="name" class="map__form__text">Name</label>
+                                <input type="text" class="map__form__input" placeholder="What is your name:" name="name"
+                                    required>
+                            </div>
+                            <div class="map__form__element">
+                                <label for=" phone" class="map__form__text">Phone</label>
+                                <input type="text" class="map__form__input" placeholder="What is your Phone:"
+                                    name="phone" required>
+                            </div>
+                        </div>
+                        <div class="map__form__element1">
+                            <label for="Question" class="map__form__text">Question</label><br>
+                            <input type="text" class="map__form__input" placeholder="I want to know:" name="name"
+                                required>
+                        </div>
+                        <div class="map__form__element2">
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                            <label for="vehicle1">I agree to the processing of personal data</label>
+                        </div>
+                        <div class="map__form__element3">
+                            <button>Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="office__location">
+                    <p class="office__locartion__address">
+                        Rostov-on-Don, Nansen St., 239 Shopping Center<br>Decorum Tel +7 (928) 768 32 29
+                    </p>
+                </div>
+                <div class="media__icons">
+                    <img src="./img/mail.png" alt="" style="margin-right: 15px;"><img src="./img/inst.png" alt="">
+                </div>
+                <div class="office__location__map">
+                    <img src="./img/map.png" alt="">
                 </div>
             </div>
         </section>
         <!-- Sixth Section -->
     </main>
+
+    <footer>
+        <div class="header_container">
+            <p class="header_companyname gold">IC "Repair Design Project"</p>
+            <ul class="header_navbar white">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#measurement">Measurement</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+            <p class="header_companyphone gold">+7 (928) 768-32-39</p>
+        </div>
+    </footer>
 </body>
 
 </html>
