@@ -13,18 +13,26 @@
 
     <!-- header -->
     <header>
-        <div class="header_container">
-            <p class="header_companyname gold">IC "Repair Design Project"</p>
-            <ul class="header_navbar white">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#measurement">Measurement</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Reviews</a></li>
-                <li><a href="#">Contacts</a></li>
-            </ul>
-            <p class="header_companyphone gold">+7 (928) 768-32-39</p>
-            <button class="header_button">Request a Call</button>
+        <div class="header__navigation">
+            <div>
+                <p class="header_companyname gold">IC "Repair Design Project"</p>
+            </div>
+            <div class="header___nav__container">
+                <ul class="header_navbar white">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#measurement">Measurement</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="header_company_phone">
+                <p class="header_companyphone gold">+7 (928) 768-32-39</p>
+            </div>
+            <div class="header_button_wrapper">
+                <button class="header_button">Request a Call</button>
+            </div>
         </div>
     </header>
     <!-- header -->
@@ -54,9 +62,11 @@
                     <div class="completed_projects">
                         <h2 class="completed_projects_text gold">Completed<br>projects</h2>
                         <p class="presented_works white">Only a small part of the work performed by our company is
-                            presented<br>on the site. For 14 years on in the construction<br>market we have made happy
+                            presentedon the site. For 14 years on in the constructionmarket we have made happy
                             more than 1000 families</p>
                         <div class="specification_wrapper">
+                            <div class="completed_projects_examples_phone"><img src="./img/flat_pic_smal.png" alt="">
+                            </div>
                             <div class="specification_grid">
                                 <div class="specification_param">
                                     <h3>City:</h2>
@@ -118,21 +128,23 @@
                 <div class="form__row">
                     <div class="form_column">
                         <label for="Name" class="from__text"><b>Name</b></label><br>
-                        <input type="text" class="form__input" placeholder="What is your name:" name="Name" required>
+                        <input type="text" class="form__input" placeholder="What is your name:"
+                            name="Name" required>
                     </div>
 
-                    <div>
+                    <div class="form_column">
                         <label for="phn" class="from__text"><b>Phone</b></label><br>
                         <input type="text" class="form__input" placeholder="Your phone number:" name="phn" required>
                     </div>
-
-                    <button class="header_button">Submit</button>
-
+                    <button class="header_button3">Submit</button>
                 </div>
                 <div class="form__row2">
                     <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" class="form__checkbox">
                     <label for="vehicle1"><span class="checkbox__text">I agree to the processing of personal
                             data</span></label>
+                </div>
+                <div class="header_button4__wrapper">
+                    <button class="header_button4">Submit</button>
                 </div>
             </div>
         </section>
@@ -199,11 +211,12 @@
         <div class="request__form__section">
             <div class="advantage__list__main">
                 <div class="advantage__list">
-                    <div class="advantage"> Our specialist will arrive for measurements per day<br>
+                    <div class="advantage"><img src="./img/list_number1.png" alt="">Our specialist will arrive for
+                        measurements per day<br>
                         contact, or appoint a date convenient for you</div>
-                    <div class="advantage">Free metering</div>
-                    <div class="advantage">Free consultation</div>
-                    <div class="advantage">Get a cost estimate and<br>
+                    <div class="advantage"><img src="./img/list_number2.png" alt="">Free metering</div>
+                    <div class="advantage"><img src="./img/list_number3.png" alt="">Free consultation</div>
+                    <div class="advantage"><img src="./img/list_number4.png" alt="">Get a cost estimate and<br>
                         the timing of your future repairs</div>
                 </div>
                 <div class="request__form">
@@ -230,6 +243,7 @@
                     <div class="button__end">
                         <button class="header_button2">CALL THE MEASURER</button>
                     </div>
+
                 </div>
             </div>
             <div class="pig__baner">
@@ -243,7 +257,7 @@
         <section class="forth__section">
             <div class="forth__section__wrapper">
                 <div class="style__list">
-                    <h2 class="style__list__header">We realize your<br>wildest fantasies</h2>
+                    <h2 class="style__list__header">We realize your wildest fantasies</h2>
                     <ul>
                         <li><a href="#">American classic</a></li> </a>
                         <li><a href="#">Empire</a></li>
@@ -260,6 +274,7 @@
                 </div>
                 <div class="grid__wrapper">
                     <div class="grid__item1"><img src="./img/grid.png" alt=""></div>
+                    <div class="grid__item1_small"><img src="./img/grid_small.png" alt=""></div>
                     <div class="grid__item2"><img src="./img/grid1.png" alt=""></div>
                     <div class="grid__item3"><img src="./img/grid2.png" alt=""></div>
                     <div class="grid__item4"><img src="./img/grid3.png" alt=""></div>
@@ -371,13 +386,16 @@
                             <label for="vehicle1">I agree to the processing of personal data</label>
                         </div>
                         <div class="map__form__element3">
-                            <button>Submit</button>
+                            <button class="gold_button2">Submit</button>
                         </div>
                     </form>
                 </div>
+                <div class="office__location__map_small">
+                    <img src="./img/map.png" alt="">
+                </div>
                 <div class="office__location">
                     <p class="office__locartion__address">
-                        Rostov-on-Don, Nansen St., 239 Shopping Center<br>Decorum Tel +7 (928) 768 32 29
+                        Rostov-on-Don, Nansen St., 239 Shopping Center Decorum<br>Tel +7 (928) 768 32 29
                     </p>
                 </div>
                 <div class="media__icons">
@@ -391,20 +409,29 @@
         <!-- Sixth Section -->
     </main>
 
-    <footer>
-        <div class="header_container">
-            <p class="header_companyname gold">IC "Repair Design Project"</p>
-            <ul class="header_navbar white">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#measurement">Measurement</a></li>
-                <li><a href="#">Team123</a></li>
-                <li><a href="#">Reviews</a></li>
-                <li><a href="#">Contacts</a></li>
-            </ul>
-            <p class="header_companyphone gold">+7 (928) 768-32-39</p>
+    <footer class="footer__nav">
+        <div class="header__navigation">
+            <div>
+                <p class="header_companyname gold">IC "Repair Design Project"</p>
+            </div>
+            <div class="header___nav__container">
+                <ul class="header_navbar white">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#measurement">Measurement</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Reviews</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="header_companyphone gold">+7 (928) 768-32-39</p>
+            </div>
+            <div>
+                <button class="header_button">Request a Call</button>
+            </div>
         </div>
-    </footer>
+    </header>
 </body>
 
 </html>
