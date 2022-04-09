@@ -43,30 +43,30 @@ img {
 
 header {
     background-color: black;
-    display: flex;
     font-size: 12.5px;
+    justify-content: space-between;
 }
 
-.header_container {
+.header__navigation {
     display: flex;
-    margin: 0 auto;
+    justify-content: space-between;
     max-width: 1256px;
-    text-transform: uppercase;
-    height: 83px;
+    margin: 0 auto;
     align-items: center;
+    padding: 20px 0;
 }
 
-.header_companyname {
-    margin-right: 95px;
+.header___nav__container {
+    max-width: 581px;
+    width: 100%;
 }
 
 .header_navbar {
     display: flex;
     list-style: none;
-}
-
-.header_navbar>li {
-    margin-right: 47px;
+    max-width: 581px;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .header_navbar>li>a {
@@ -74,17 +74,13 @@ header {
     color: white;
 }
 
-.header_navbar>li:last-child {
-    margin-right: 0;
-}
-
 .header_navbar>li>a:hover {
     color: #E3B873;
     text-decoration: underline;
 }
 
-.header_companyphone {
-    margin: 0 45px 0 67px;
+.header_companyphone, .header_companyname {
+    margin: 0 10px;
 }
 
 .header_button {
@@ -96,6 +92,7 @@ header {
     border: 0;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
     font-family: 'Nunito Sans';
+    margin-right: 10px;
 }
 
 .header_button2 {
@@ -109,6 +106,29 @@ header {
     font-family: 'Nunito Sans';
     margin-top: 20px;
     margin-left: auto;
+}
+
+.header_button3 {
+    text-transform: uppercase;
+    padding: 10px 75px;
+    background: #E3B873;
+    color: #fff;
+    border-radius: 2px;
+    border: 0;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    font-family: 'Nunito Sans';
+}
+
+.header_button4 {
+    text-transform: uppercase;
+    padding: 10px 75px;
+    background: #E3B873;
+    color: #fff;
+    border-radius: 2px;
+    border: 0;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    font-family: 'Nunito Sans';
+    text-align: center;
 }
 
 .button__end {
@@ -181,9 +201,8 @@ header {
 /* Second Section */
 
 .section-two {
-    height: 1074px;
+    padding-bottom: 400px;
     background-color: #131313;
-
 }
 
 .content_wrapper {
@@ -289,10 +308,15 @@ header {
     /* text-align: center; */
 }
 
+.form_column {
+    max-width: 230px;
+    width: 100%;
+}
+
 .form__row {
     display: flex;
     justify-content: space-between;
-    max-width: 600px;
+    max-width: 817px;
     margin: 0 auto;
 }
 
@@ -321,6 +345,8 @@ header {
 .form__input {
     border: none;
     border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+    max-width: 230px;
+    width: 100%;
 }
 
 .from__text2 {
@@ -470,8 +496,7 @@ header {
 .request__form__section {
     background: url('../img/advantage_img.png');
     background-repeat: no-repeat;
-    max-width: 1256px;
-    margin: 0 auto;
+
 }
 
 .advantage__list__main {
@@ -479,14 +504,19 @@ header {
     margin: 0 auto;
     padding-top: 120px;
     justify-content: space-between;
+    max-width: 1256px;
 }
 
 .advantage__list {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     max-width: 60%;
-    justify-content: space-around;
-    margin-left: 130px;
+}
+
+.advantage {
+    display: flex;
+    align-items: center;
 }
 
 .request__form {
@@ -527,6 +557,7 @@ header {
     color: #E3B873;
     justify-content: end;
     align-items: center;
+    max-width: 1250px;
 }
 
 /* Third Section */
@@ -833,4 +864,274 @@ footer {
     background-color: black;
     display: flex;
     font-size: 12.5px;
+}
+
+.completed_projects_examples_phone {
+    margin-top: 36px;
+    width: 340px;
+}
+
+.gold_button2 {
+    font-size: 13px;
+    width: 100%;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 16px;
+    background: #E3B873;
+    border-radius: 2px;
+    border: 1px solid #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+    font-family: 'Nunito Sans';
+}
+
+@media screen and (min-width: 621px) {
+    .completed_projects_examples_phone, .header_button4__wrapper, .grid__item1_small, .office__location__map_small {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 620px) {
+
+    .header___nav__container, .header_button_wrapper, .completed_projects_city, .slider__panel,
+    .completed_projects_examples, .header_button3, .request__form__section, .grid__item2,
+    .grid__item3, .grid__item4, .style__list>ul, .fifth__section__wrapper, .fifth__section__back, .grid__item1, .footer__nav, .office__location__map {
+        display: none;
+    }
+
+    html {
+        margin: 0;
+        padding: 0;
+    }
+
+    .header_company_phone {
+        text-align: end;
+    }
+
+    .header_companyphone {
+        color: #fff;
+    }
+
+    .flat {
+        max-width: 360px;
+        padding-top: 85px;
+        margin: 0 auto;
+    }
+
+    .section-one {
+        background-image: url(../img/small_flat.png);
+    }
+
+    .toner, .section-one {
+        height: 476px;
+    }
+
+    .turnkey_repair {
+        font-size: 23px;
+        line-height: 132.83%;
+    }
+
+    .turnkey_repair_text {
+        font-size: 14px;
+        line-height: 135.84%;
+    }
+
+    .button_box {
+        max-width: 360px;
+    }
+
+    .gold_button, .transparent_button {
+        width: 100%;
+    }
+
+    .content_wrapper {
+        max-width: 360px;
+        text-align: center;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .completed_projects {
+        margin: 36px 0 0 0;
+    }
+
+    .presented_works {
+        font-size: 11px;
+        line-height: 158.48%;
+    }
+
+    .specification_param>p {
+        font-size: 11px;
+        line-height: 135.84%;
+    }
+
+    .specification_param>h3 {
+        font-size: 14px;
+        line-height: 138.6%;
+    }
+
+    .section-two {
+        padding-bottom: 300px;
+    }
+
+    .section-three, .section-two {
+        background-color: #181818;
+    }
+
+    .section-three {
+        padding: 0 10px;
+    }
+
+    .center {
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    .online__camera__text {
+        max-width: 360px;
+    }
+
+    .broadcast {
+        font-size: 11px;
+        line-height: 169.8%;
+        color: #fff;
+    }
+
+    .online__camera__form {
+        max-width: 360px;
+        margin-top: 45px;
+    }
+
+    .form__row {
+        flex-direction: column;
+        background-color: #181818;
+    }
+
+    .from__text {
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    .form__input {
+        color: #fff;
+        background-color: #181818;
+        border-bottom: 1px solid rgba(54, 54, 54, 0.5);
+        width: 340px;
+    }
+
+    .form__input::-webkit-input-placeholder {
+        color: #fff;
+    }
+
+    .form_column:nth-child(2) {
+        margin: 60px 0 30px;
+    }
+
+    .checkbox__text {
+        color: #fff;
+        margin-bottom: 60px;
+    }
+
+    .header_button4 {
+        margin: 0 auto;
+    }
+
+    .form__row2 {
+        justify-content: flex-start;
+    }
+
+    .header_button4__wrapper {
+        display: flex;
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .types__of__repair {
+        margin-top: 60px;
+    }
+
+    .repair__examples {
+        flex-direction: column;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    .card__content {
+        margin: 0;
+        margin-top: -145px;
+    }
+
+    .forth__section {
+        background: #131313;
+    }
+
+    .forth__section__wrapper {
+        flex-direction: column;
+        max-width: 360px;
+        align-items: center;
+    }
+
+    .card__content__text {
+        font-size: 13px;
+        line-height: 169.8%;
+        color: #959595;
+    }
+
+    .style__list__header {
+        font-size: 22px;
+        line-height: 138.6%;
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #E3B873;
+    }
+
+    .style__list {
+        margin-top: -300px;
+        max-width: 360px;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .map__form__element0 {
+        flex-direction: column;
+    }
+
+    .map__form__element:nth-child(2) {
+        margin: 60px 0 0;
+    }
+
+    .question__form {
+        max-width: 360px;
+    }
+
+    .office__location__map_small, .office__location {
+        margin: 0 auto;
+    }
+
+    .office__location {
+        max-width: 360px;
+        font-size: 18px;
+        line-height: 138.6%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #E3B873;
+    }
+
+    .office__location__map_small {
+        margin-top: 30px;
+    }
+
+    .sixth__section {
+        background-image: none;
+        background-color: #131313;
+    }
+
+    .sixth__section::before {
+        background-color: #131313;
+    }
 }
